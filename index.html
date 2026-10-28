@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css"/>
+    </head>
+    <body>
+        <div class="main">
+            <h3>Enter Code</p>
+            <form class="container" id="form">
+                <input id="code" name="code" required pattern="([0-9a-fA-F]{2}(\s)?){5}"/>
+                <input type="submit" value="Login"/>
+            </form>
+        </div>
+    </body>
+
+    <script src="index.js"></script>
+    <script>
+    if (!window.location.href.includes("#")) {
+        window.location.href = `https://anilist.co/api/v2/oauth/authorize?client_id=23301&response_type=token`
+    }
+    </script>
+</html>

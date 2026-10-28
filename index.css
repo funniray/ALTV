@@ -1,0 +1,37 @@
+:root {
+    color-scheme: light dark;
+}
+
+html {
+    color: light-dark(#333b3c, #efefec);
+    background-color: light-dark(#efedea, #171717);
+}
+
+.main {
+    margin: auto;
+    padding: 16px;
+    max-width: 1600px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.container {
+    display: flex;
+    gap: 8px;
+}
+
+.container > * {
+    font-size: 16px;
+}
+
+.container > input {
+    flex-grow: 4;
+}
+
+.container > button {
+    flex-grow: 1;
+}
+
+input :user-invalid {
+    border-color: red;
+}
